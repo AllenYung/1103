@@ -1,0 +1,47 @@
+.ahoy {
+  width: 700px;
+  height: 800px;
+  background-image: url(./marine.jpg);
+  background-repeat: no-repeat;
+}
+
+.top {
+  transition: 2s;
+  width: 300px;
+  height: 150px;
+  background-color: yellow;
+  position: relative;
+}
+.top::after {
+  content: "";
+  transition: 3s;
+  width: 50px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-color: red;
+}
+.top:hover {
+  width: 600px;
+  height: 200px;
+}
+.top:hover::after {
+  content: "";
+  transition: 2.5s;
+  width: 600px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  background-color: red;
+}
+
+.nike {
+  width: 300px;
+  height: 300px;
+  font-size: 80pt;
+}
+.nike .fa-check {
+  color: purple;
+}/*# sourceMappingURL=main.css.map */
